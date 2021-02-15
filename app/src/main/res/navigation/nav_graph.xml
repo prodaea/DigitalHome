@@ -24,5 +24,18 @@
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_SampleFragment"
+            app:destination="@id/SampleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SampleFragment"
+        android:name="com.interview.sample.SampleFragment"
+        android:label="@string/sample_fragment_label"
+        tools:layout="@layout/sample_fragment">
+
+        <action
+            android:id="@+id/action_SampleFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
     </fragment>
 </navigation>
